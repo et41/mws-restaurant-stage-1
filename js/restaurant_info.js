@@ -131,6 +131,8 @@ createReviewHTML = (review) => {
 
   const rating = document.createElement('p');
   rating.innerHTML = `Rating: ${review.rating}`;
+  //add id to review rating.
+  rating.setAttribute('id', 'rating');
   li.appendChild(rating);
 
   const comments = document.createElement('p');
