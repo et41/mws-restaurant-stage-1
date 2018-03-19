@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- setting the viewport to display the website in every devices -->
@@ -23,10 +23,10 @@
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" aria-label="list-box" name="neighborhoods" onchange="updateRestaurants()"  alt="select your neighborhood">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" aria-label="list-box" name="cuisines" onchange="updateRestaurants()"  alt="select your cuisines" >
           <option value="all">All Cuisines</option>
         </select>
       </div>
