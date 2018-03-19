@@ -296,16 +296,48 @@ nav h1 a {
   background-color: #eee;
   border: 2px solid #333;
   border-radius: 15px;
-  display: block;
   list-style-type: none;
   margin: 0 0 2vw 2vw;
   overflow: hidden;
-  padding: 0 20px 20px;
   position: relative;
   width: 83%;
+  display: flex;
+  flex-wrap: wrap;
 }
-#reviews-list li p {
-  margin: 0 0 10px;
+
+#reviews-list li p:not(#name):not(#date) {
+  padding: 10px 20px 10px;
+}
+#reviews-list #name {
+	font-size: 1em;
+	letter-spacing: 2px;
+	color: wheat;
+	background-color: #333;
+	width: 50%;
+	text-indent: 15vw;
+	padding: 2px 0 10px 0;
+}
+#reviews-list #date {
+    font-size: 1em;
+	background-color: #333;
+	color: wheat;
+	width: 50%;
+	text-indent: 10vw;
+	padding: 2px 0 10px 0;
+}
+@media screen and (max-width:650px) {
+	#reviews-list #date {
+		text-indent: 0;
+		font-size: 0.8em;
+	}
+	#reviews-list #name {
+		text-indent: 10vw;
+		font-size: 0.8em;
+	}
+	#restaurants-list li p {
+	 margin:0;
+	 padding: 0;
+	}
 }
 #restaurant-hours td {
   padding: 0 0 0 30px;
