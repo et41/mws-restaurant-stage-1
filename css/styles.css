@@ -281,11 +281,11 @@ nav h1 a {
   margin: auto;
 }
 #reviews-container h2 {
-  color: #f58500;
-  font-weight: 300;
-  letter-spacing: -1px;
-  padding-left: 5vw;
-  margin: 0;
+  color: #f78d0e;
+  font-weight: 0;
+  letter-spacing: 1px;
+  padding-left: 2vw;
+  margin: 15px;
 }
 #reviews-list {
   background-color: #eee;
@@ -305,10 +305,12 @@ nav h1 a {
   flex-wrap: wrap;
 }
 
-#reviews-list li p:not(#name):not(#date) {
+#reviews-list li p:not(#name):not(#date):not(#rating) {
   padding: 10px 20px 10px;
+  flex-basis: 100%;
 }
 #reviews-list #name {
+	box-shadow: 3px 3px 10px #888888;
 	font-size: 1em;
 	letter-spacing: 2px;
 	color: wheat;
@@ -318,12 +320,21 @@ nav h1 a {
 	padding: 2px 0 10px 0;
 }
 #reviews-list #date {
+	box-shadow: 3px 3px 10px #888888;
     font-size: 1em;
 	background-color: #333;
 	color: wheat;
 	width: 50%;
 	text-indent: 10vw;
 	padding: 2px 0 10px 0;
+}
+#reviews-list #rating {
+	color:wheat;
+	border-radius: 5px;
+	background-color: #2683a4;
+	margin: 10px 0 0 19px;
+	box-shadow: 2px 2px #888888;
+	padding: 10px 10px 10px 10px;
 }
 @media screen and (max-width:650px) {
 	#reviews-list #date {
@@ -335,8 +346,8 @@ nav h1 a {
 		font-size: 0.8em;
 	}
 	#restaurants-list li p {
-	 margin:0;
-	 padding: 0;
+		margin:0;
+		padding: 0;
 	}
 }
 #restaurant-hours td {
