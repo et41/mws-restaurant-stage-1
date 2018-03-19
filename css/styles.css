@@ -9,7 +9,6 @@ body,td,th,p {
 }
 body {
 	background-color: #fdfdfd;
-	position: absolute;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -38,8 +37,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   width: 100%;
 }
 #footer {
-  background-color: #444;
-  color: #aaa;
+  color: #B1B1B1;
+  background: #444444; 
+  opacity: 1;
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
@@ -85,7 +85,7 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-  color: #0275d8;
+  color: #005096;
   text-decoration: none;
 }
 
@@ -147,9 +147,9 @@ nav h1 a {
   list-style: outside none none;
   margin: 0;
   padding: 30px 0 60px;
-  text-align: center;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -170,7 +170,9 @@ nav h1 a {
   min-width: 100%;
 }
 #restaurants-list li h1 {
-  color: #f18200;
+  color: #703f0a;
+  background: #FFF; 
+  opacity: 1;
   font-family: Arial,sans-serif;
   font-size: 13pt;
   font-weight: 200;
@@ -185,9 +187,10 @@ nav h1 a {
   font-size: 11pt;
 }
 #restaurants-list li a {
-  background-color: orange;
+  color: #fff; 
+  background: #7d4f00;
+  opacity: 1;
   border-bottom: 3px solid #eee;
-  color: #fff;
   display: inline-block;
   font-size: 10pt;
   margin: 15px 0 0;
@@ -238,7 +241,7 @@ nav h1 a {
   width: 100%;
 }
 #restaurant-name {
-  color: #f18200;
+  color: #d07000;
   font-family: Arial,sans-serif;
   font-size: 20pt;
   font-weight: 200;
@@ -281,7 +284,7 @@ nav h1 a {
   margin: auto;
 }
 #reviews-container h2 {
-  color: #f78d0e;
+  color: #5e3c10;
   font-weight: 0;
   letter-spacing: 1px;
   padding-left: 2vw;
@@ -304,13 +307,13 @@ nav h1 a {
   display: flex;
   flex-wrap: wrap;
 }
-
 #reviews-list li p:not(#name):not(#date):not(#rating) {
   padding: 10px 20px 10px;
   flex-basis: 100%;
 }
 #reviews-list #name {
 	box-shadow: 3px 3px 10px #888888;
+	font-weight: 700;
 	font-size: 1em;
 	letter-spacing: 2px;
 	color: wheat;
@@ -321,6 +324,7 @@ nav h1 a {
 }
 #reviews-list #date {
 	box-shadow: 3px 3px 10px #888888;
+	font-weight: 300;
     font-size: 1em;
 	background-color: #333;
 	color: wheat;
@@ -329,9 +333,10 @@ nav h1 a {
 	padding: 2px 0 10px 0;
 }
 #reviews-list #rating {
-	color:wheat;
 	border-radius: 5px;
-	background-color: #2683a4;
+	color: #F5DEB3;
+	background: #006C8B; 
+	opacity: 1;
 	margin: 10px 0 0 19px;
 	box-shadow: 2px 2px #888888;
 	padding: 10px 10px 10px 10px;
@@ -342,6 +347,7 @@ nav h1 a {
 		font-size: 0.8em;
 	}
 	#reviews-list #name {
+		font-weight: 300;
 		text-indent: 10vw;
 		font-size: 0.8em;
 	}
