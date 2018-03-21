@@ -38,7 +38,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #footer {
   color: #B1B1B1;
-  background: #444444; 
+  background: #444444;
   opacity: 1;
   font-size: 8pt;
   letter-spacing: 1px;
@@ -99,6 +99,7 @@ nav h1 a {
   height: 400px;
   width: 100%;
   background-color: #ccc;
+  tab-index: -1;
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
@@ -160,6 +161,7 @@ nav h1 a {
   padding: 0 30px 25px;
   text-align: left;
   width: calc((100% - 200px)/2);
+  padding-bottom: 50px;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -171,7 +173,7 @@ nav h1 a {
 }
 #restaurants-list li h1 {
   color: #703f0a;
-  background: #FFF; 
+  background: #FFF;
   opacity: 1;
   font-family: Arial,sans-serif;
   font-size: 13pt;
@@ -186,8 +188,11 @@ nav h1 a {
   margin: 0;
   font-size: 11pt;
 }
+#restaurants-list p:last-child {
+  margin: 50px;
+}
 #restaurants-list li a {
-  color: #fff; 
+  color: #fff;
   background: #7d4f00;
   opacity: 1;
   border-bottom: 3px solid #eee;
@@ -325,7 +330,7 @@ nav h1 a {
 #reviews-list #date {
 	box-shadow: 3px 3px 10px #888888;
 	font-weight: 300;
-    font-size: 1em;
+  font-size: 1em;
 	background-color: #333;
 	color: wheat;
 	width: 50%;
@@ -335,7 +340,7 @@ nav h1 a {
 #reviews-list #rating {
 	border-radius: 5px;
 	color: #F5DEB3;
-	background: #006C8B; 
+	background: #006C8B;
 	opacity: 1;
 	margin: 10px 0 0 19px;
 	box-shadow: 2px 2px #888888;
