@@ -167,3 +167,11 @@ getParameterByName = (name, url) => {
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+/**
+ * Triggered by focus and changing focus from map to restaurant-container.
+ */
+checkFocusRestaurant = (e) => {
+    console.log('e: ' , e);
+    document.getElementById('restaurant-container').focus();
+}

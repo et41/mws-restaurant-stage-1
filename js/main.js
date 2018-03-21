@@ -114,7 +114,6 @@ resetRestaurants = (restaurants) => {
   self.restaurants = [];
   const ul = document.getElementById('restaurants-list');
   ul.innerHTML = '';
-
   // Remove all map markers
   self.markers.forEach(m => m.setMap(null));
   self.markers = [];
@@ -177,4 +176,12 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     });
     self.markers.push(marker);
   });
+}
+
+/**
+ * Triggered by focus and changing focus from map to filter.
+ */
+checkFocus = (e) => {
+    console.log('e: ' , e);
+    document.getElementById('filter').focus();
 }

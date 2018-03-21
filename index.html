@@ -15,13 +15,12 @@
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
-
   <main id="maincontent">
-    <section id="map-container">
-      <div id="map"></div>
+    <section id="map-container" onfocusin="checkFocus(this)">
+      <div id="map" tabindex="-1"></div>
     </section>
     <section>
-      <div class="filter-options">
+      <div id="filter" class="filter-options" tabindex="0">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" aria-label="list-box" name="neighborhoods" onchange="updateRestaurants()"  alt="select your neighborhood">
           <option value="all">All Neighborhoods</option>
