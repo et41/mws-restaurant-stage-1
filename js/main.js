@@ -141,7 +141,11 @@ createRestaurantHTML = (restaurant) => {
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   // add alt tag to images.
-  image.alt = "showing restaurant " + restaurant.name + " " + restaurant.cuisine_type + " cuisine";
+  image.alt = "showing restaurant is " + restaurant.name + " and cuisine type is " + restaurant.cuisine_type;
+  //add srcset and sizes to make responsive images.
+  image.srcset =  `images/${restaurant.id}-400small.jpg 480w,images/${restaurant.id}-600medium.jpg 600w`;
+  image.sizes =  "(max-width: 600px) 80vw,(min-width: 601px) 50vw";
+
   li.append(image);
 
   const name = document.createElement('h1');
