@@ -8,7 +8,9 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port = 8000 // Change this to your server port
+    const port = 8000;
+    const serverextension = "http://127.0.0.1:8887/";
+    //return `http://localhost:${port}/data/restaurants.json`;
     return `http://localhost:${port}/data/restaurants.json`;
   }
 
@@ -166,5 +168,15 @@ class DBHelper {
     );
     return marker;
   }
-
 }
+/**
+ * Service worker registeration.
+ */
+if (!('serviceWorker' in navigator)) {
+  console.log('Service worker not supported');
+}
+navigator.serviceWorker.register('sw.js').then(function(reg) {
+  console.log('Registered', reg);
+}).catch(function(error) {
+  console.log('Registration failed:', error);
+});
