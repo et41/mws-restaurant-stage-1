@@ -298,8 +298,6 @@ nav h1 a {
 }
 #reviews-list {
   background-color: #eee;
-  margin: 0vh;
-  padding: 3vh;
 }
 #reviews-list li {
   background-color: #eee;
@@ -318,7 +316,7 @@ nav h1 a {
   flex-basis: 100%;
 }
 #reviews-list [id^=name] {
-  box-shadow: 3px 3px 10px #888888;
+  box-shadow: 1px 3px 10px #888888;
   font-weight: 700;
   font-size: 1em;
   letter-spacing: 0.5vw;
@@ -387,4 +385,10 @@ nav h1 a {
   color: #666;
   width: 100%;
   padding-top: 0;
+}
+*:focus {
+  outline: #0099FF dotted 2px;
+}
+#reviews-list [id^=rating]:focus {
+  outline: black dotted 4px;
 }

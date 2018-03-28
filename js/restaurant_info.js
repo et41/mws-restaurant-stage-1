@@ -102,6 +102,8 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
   const title = document.createElement('h2');
   title.innerHTML = 'Reviews';
+  //add tabindex to title
+  title.setAttribute('tabindex', '0');
   container.appendChild(title);
 
   if (!reviews) {
@@ -126,18 +128,24 @@ createReviewHTML = (review) => {
   name.innerHTML = review.name;
   //add id to review name.
   name.setAttribute('id', 'name' + review.name);
+  //add tabindex
+  name.setAttribute('tabindex', '0');
   li.appendChild(name);
 
   const date = document.createElement('p');
   date.innerHTML = review.date;
   //add id to review date.
   date.setAttribute('id', 'date' + review.name);
+  //add tabindex
+  date.setAttribute('tabindex', '0');
   li.appendChild(date);
 
   const rating = document.createElement('p');
   rating.innerHTML = `Rating: ${review.rating}`;
   //add id to review rating.
   rating.setAttribute('id', 'rating' + review.name);
+  //add tabindex
+  rating.setAttribute('tabindex', '0');
   li.appendChild(rating);
 
   const comments = document.createElement('p');
@@ -177,6 +185,24 @@ getParameterByName = (name, url) => {
  * Triggered by focus and changing focus from map to restaurant-container.
  */
 checkFocusRestaurant = (e) => {
-    console.log('e: ' , e);
-    document.getElementById('restaurant-container').focus();
+  console.log('e: ' , e);
+  document.getElementById('restaurant-name').focus();
 }
+
+/**
+ * Manage focus in restaurant container part
+ */
+document.addEventListener('keyup', (e) => {
+  console.log('e review: ' , e);
+  let keyonElement = e.srcElement.id;
+  const TABKEY = 9;
+  if(e.keyCode == TABKEY) {
+    if(keyonElement == "restaurant-name"){
+    let elResCont = document.getElementById('restaurant-container');
+    let elResCont_childs = elResCont.querySelectorAll('p, td');
+    elResCont_childs.forEach(el_child => {
+      el_child.setAttribute('tabindex', '0');
+    });
+  }
+}
+});

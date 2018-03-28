@@ -186,7 +186,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
  * Triggered by focus and changing focus from map to filter.
  */
 checkFocus = (e) => {
-    console.log('e: ' , e);
-    document.getElementById('filter').focus();
+  console.log('e: ' , e);
+  document.getElementById('filter').focus();
 }
 
