@@ -317,6 +317,7 @@ nav h1 a {
 }
 #reviews-list [id^=name] {
   box-shadow: 1px 3px 10px #888888;
+  border-top-left-radius: inherit;
   font-weight: 700;
   font-size: 1em;
   letter-spacing: 0.5vw;
@@ -328,6 +329,7 @@ nav h1 a {
 }
 #reviews-list  [id^=date] {
   box-shadow: 3px 3px 10px #888888;
+  border-top-right-radius: inherit;
   font-weight: 300;
   font-size: 1em;
   background-color: #333;
@@ -356,10 +358,6 @@ nav h1 a {
     text-indent: 10vw;
     font-size: 0.8em;
   }
-  #restaurants-list li p {
-    margin:0;
-    padding: 0;
-  }
 }
 #restaurant-hours, #restaurant-hours tr {
   display: flex;
@@ -387,8 +385,15 @@ nav h1 a {
   padding-top: 0;
 }
 *:focus {
-  outline: #0099FF dotted 2px;
+  outline: #1206e7 solid 2px;
 }
 #reviews-list [id^=rating]:focus {
-  outline: black dotted 4px;
+  outline: #000000 solid 2px;
+}
+.filter-options select:focus {
+  outline: none;
+  border: 2px solid #000000;
+}
+*:hover {
+  outline: none;
 }
