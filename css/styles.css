@@ -316,7 +316,7 @@ nav h1 a {
   flex-basis: 100%;
 }
 #reviews-list [id^=name] {
-  box-shadow: 1px 3px 10px #888888;
+  /*box-shadow: 1px 3px 10px #888888;*/
   border-top-left-radius: inherit;
   font-weight: 700;
   font-size: 1em;
@@ -328,7 +328,7 @@ nav h1 a {
   padding: 6px 0 10px 0;
 }
 #reviews-list  [id^=date] {
-  box-shadow: 3px 3px 10px #888888;
+  /*box-shadow: 3px 3px 10px #888888;*/
   border-top-right-radius: inherit;
   font-weight: 300;
   font-size: 1em;
@@ -385,10 +385,13 @@ nav h1 a {
   padding-top: 0;
 }
 *:focus {
-  outline: #1206e7 solid 2px;
+  outline: none;
+  box-shadow: 5px 5px 5px #7A4507;
 }
 #reviews-list [id^=rating]:focus {
-  outline: #000000 solid 2px;
+  outline: none;
+  border: 2px solid #000000;
+  
 }
 .filter-options select:focus {
   outline: none;
