@@ -162,6 +162,7 @@ nav h1 a {
   text-align: left;
   width: calc((100% - 200px)/2);
   padding-bottom: 50px;
+
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -211,6 +212,16 @@ nav h1 a {
   #restaurants-list .restaurant-img {
     width: 60vw;
     max-height: 450px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #restaurants-list li {
+    max-width: 25%;
+    margin: 5px auto 20px auto;
+  }
+  #restaurants-list .restaurant-img {
+    max-width: 200px;
+    margin: auto;
   }
 }
 /* ====================== Restaurant Details ====================== */
@@ -391,7 +402,7 @@ nav h1 a {
 #reviews-list [id^=rating]:focus {
   outline: none;
   border: 2px solid #000000;
-  
+
 }
 .filter-options select:focus {
   outline: none;
