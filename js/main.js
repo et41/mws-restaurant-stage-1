@@ -181,12 +181,3 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 }
-
-/**
- * Triggered by focus and changing focus from map to filter.
- */
-checkFocus = (e) => {
-  console.log('e: ' , e);
-  document.getElementById('filter').focus();
-}
-

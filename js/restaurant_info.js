@@ -182,14 +182,6 @@ getParameterByName = (name, url) => {
 }
 
 /**
- * Triggered by focus and changing focus from map to restaurant-container.
- */
-checkFocusRestaurant = (e) => {
-  console.log('e: ' , e);
-  document.getElementById('restaurant-name').focus();
-}
-
-/**
  * Manage focus in restaurant container part
  */
 document.addEventListener('keyup', (e) => {
