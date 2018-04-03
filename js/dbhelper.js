@@ -175,8 +175,8 @@ class DBHelper {
 if (!('serviceWorker' in navigator)) {
   console.log('Service worker not supported');
 }
-navigator.serviceWorker.register('sw.js').then(function(reg) {
-  console.log('Registered', reg);
+navigator.serviceWorker.register('/sw.js').then(function(reg) {
+ // console.log('Registered', reg);
 }).catch(function(error) {
   console.log('Registration failed:', error);
 });
