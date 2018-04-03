@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# https://gist.github.com/HaiyangXu/ec88cbdce3cdbac7b8d5
 import http.server
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import socketserver
