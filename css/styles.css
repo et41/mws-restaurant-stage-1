@@ -52,11 +52,11 @@ nav {
   width: 100%;
   height: 80px;
   background-color: #252831;
-  text-align:center;
 }
 nav h1 {
   margin: auto;
   padding: 20px;
+  text-align:center;
 }
 nav h1 a {
   color: #fff;
@@ -66,14 +66,14 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-  padding: 20px 0 0 20px;
   list-style: none;
   background-color: #eee;
   width: 100%;
   box-shadow: 3px 2px 5px #888888;
+  height: 7%;
 }
 /* Display list items side by side */
-#breadcrumb li {
+#breadcrumb ol li {
   display: inline;
 }
 
@@ -85,13 +85,15 @@ nav h1 a {
 }
 
 /* Add a color to all links inside the list */
-#breadcrumb li a {
+#breadcrumb ol li a {
   color: #005096;
   text-decoration: none;
 }
-
+#breadcrumb ol  {
+  padding-left: 10px;
+}
 /* Add a color on mouse-over */
-#breadcrumb li a:hover {
+#breadcrumb ol li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
@@ -246,9 +248,9 @@ nav h1 a {
   font-size: 10px;
 }
 .inside #map-container {
-  height: 380px;
+  height: 400px;
   width: 100%;
-  margin: 28vh 8px 0 6px;
+  margin: 20vh 8px 0 6px;
 }
 .inside #map {
   border: 2px solid #d9d9d9;
