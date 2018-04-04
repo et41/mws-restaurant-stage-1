@@ -306,27 +306,30 @@ nav h1 a {
   color: #5e3c10;
   font-weight: 0;
   letter-spacing: 1px;
-  padding-left: 2vw;
+  padding-left: 3vw;
   margin: 15px;
+  font-size: 2em;
 }
 #reviews-list {
   background-color: #eee;
+  padding:0;
 }
 #reviews-list li {
   background-color: #eee;
   border: 2px solid #333;
   border-radius: 15px;
   list-style-type: none;
-  margin: 0 0 2vw 2vw;
+  margin: 0 auto 2vw auto;
   overflow: hidden;
   position: relative;
-  width: 83%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
 }
 #reviews-list li p:not([id^=name]):not([id^=date]):not([id^=rating]) {
   padding: 10px 20px 10px;
   flex-basis: 100%;
+  font-size: 1em;
 }
 #reviews-list [id^=name] {
   /*box-shadow: 1px 3px 10px #888888;*/
